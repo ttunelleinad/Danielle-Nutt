@@ -7,8 +7,8 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+                                            Base styles: opinionated defaults
+                                            ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
@@ -26,10 +26,13 @@ html {
 }
 
 /* ==========================================================================
-   Author's Custom Styles
-   ========================================================================== */
+                                                Author's Custom Styles
+                                           ========================================================================== */
 
-/***********************BASIC STYLES AND LAYOUT**********************************/
+
+
+/****************************BASIC STYLES AND LAYOUT************************************/
+                    /************HEADER STYLES*************/
 
 body {
     font-family: "Open Sans Condensed", Helvetica, sans-serif;
@@ -89,7 +92,7 @@ section, section p {
     margin-left: 20px;
 }
 
-/**********************************MAIN NAV*********************************/
+/**************************************MAIN NAV****************************************/
 nav {
     font-family: "Amatic SC", "Trebuchet MS", Helvetica, sans-serif;
     font-size: 1.5em;
@@ -110,7 +113,7 @@ nav a {
     color: #000;
 }
 
-/*****************************SHOW CURRENT NAV POSITION***************************/
+/*********************************SHOW CURRENT NAV POSITION****************************/
 nav a:hover, .nav li.active, .nav li.active a {
     border-bottom: 3px solid #8133B4;
 }
@@ -121,7 +124,7 @@ body.home a.home, body.about a.about, body.portfolio a.portfolio, body.contact a
 }
 
 
-/***************************PLACEHOLDER IMAGES FOR HOME PAGE**********************/
+/*************************PLACEHOLDER IMAGES FOR HOME PAGE*****************************/
 #placeholder {
     text-align: center;
 }
@@ -131,7 +134,7 @@ body.home a.home, body.about a.about, body.portfolio a.portfolio, body.contact a
     margin: 5px auto;
 }
 
-/****************************ABOUT***********************************/
+/**********************************ABOUT**********************************************/
 #danielle, #danielle2 {
     max-width: 100%;
     max-height: 100%;
@@ -147,7 +150,7 @@ body.home a.home, body.about a.about, body.portfolio a.portfolio, body.contact a
     display: none;
 }
 
-/******************************PORTFOLIO***********************************/
+/*************************************PORTFOLIO**************************************/
 #port-img img {
     max-width: 100%;
     border: 2px solid #000;
@@ -166,9 +169,8 @@ body.home a.home, body.about a.about, body.portfolio a.portfolio, body.contact a
 }
 
 
-/*****************************CONTACT***********************************/
+/***********************************CONTACT*****************************************/
 .connect {
-    color: #551a8b;
     text-align: center;
     font-size: 6.5em;
     border: 1px solid #999;
@@ -178,7 +180,11 @@ body.home a.home, body.about a.about, body.portfolio a.portfolio, body.contact a
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);;
 }
 
-/****************************CONNECT HOVER******************************/
+.connect a, .connect a:active, .connect a:visited, .connect a:link, .connect a:hover {
+     color: #551a8b;
+}
+
+/********************************CONNECT HOVER*************************************/
 .grow {
   display: inline-block;
   -webkit-transition-duration: 0.3s;
@@ -273,7 +279,7 @@ footer p {
     margin: 10px;
 }
 
-#social a {
+#social a, #social a:active, #social a:link, #social a:visited {
     text-decoration: none;
     color: #8133B4;
     font-size: 1.5em;
@@ -371,7 +377,9 @@ footer p {
 }
 
 
-/***********************************BIOLERPLATE BUILT-IN STYLES***************************************/
+/* ==========================================================================
+                                               Biolderplate Built-In Styles
+                                            ========================================================================== */
 
 /* Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -416,8 +424,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
+                                                Browse Happy prompt
+                                          ========================================================================== */
 
 .browsehappy {
     margin: 0.2em 0;
@@ -428,9 +436,9 @@ textarea {
 
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+                                               Print styles.
+                                               Inlined to avoid required HTTP connection: h5bp.com/r
+                                            ========================================================================== */
 
 @media print {
     * {
