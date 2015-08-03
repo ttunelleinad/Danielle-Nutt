@@ -32,13 +32,16 @@ html {
 
 
 /****************************BASIC STYLES AND LAYOUT************************************/
-                    /************HEADER STYLES*************/
-
 body {
     font-family: "Open Sans Condensed", Helvetica, sans-serif;
     font-size: 100%;
     padding: 0;
     margin: 0;
+}
+
+#container {
+    margin: 15px;
+    padding: 5px;
 }
 
 header {
@@ -55,44 +58,15 @@ header {
 h1 {
     font-family: "Amatic SC", "Trebuchet MS", Helvetica, sans-serif;
     text-align: center;
+    font-size: 36px;
 }
 
 h1 a {
-    font-size: small;
     text-decoration: none;
     color: #8133B4;
 }
 
-section, section p {
-    margin: 10px;
-}
-
-#left {
-    float: left;
-    width: 30%;
-}
-
-#left a {
-    text-align: center;
-}
-
-#right {
-    width: 60%;
-    float: right;
-}
-
-#right img {
-    max-width: 100%;
-    border: 1px solid #000;
-    margin: 5px;
-}
-
-.leftHeader {
-    text-align: left;
-    margin-left: 20px;
-}
-
-/**************************************MAIN NAV****************************************/
+/**************************************NAV****************************************/
 nav {
     font-family: "Amatic SC", "Trebuchet MS", Helvetica, sans-serif;
     font-size: 1.5em;
@@ -113,106 +87,61 @@ nav a {
     color: #000;
 }
 
+#page2, #page3, #page4 {
+    display: none;
+}
+
+/***************************************SLICKNAV***************************************/
+.slicknav_menu {
+    margin-left: 5px;
+    background: url(../img/swirl.png);
+}
+
+.slicknav_menu i {
+    color: #8133B4;
+}
+
 /*********************************SHOW CURRENT NAV POSITION****************************/
-nav a:hover, .nav li.active, .nav li.active a {
-    border-bottom: 3px solid #8133B4;
-}
-
-body.home a.home, body.about a.about, body.portfolio a.portfolio, body.contact a.contact {
-
+.current {
     border-bottom: 3px solid #8133B4;
 }
 
 
-/*************************PLACEHOLDER IMAGES FOR HOME PAGE*****************************/
-#placeholder {
-    text-align: center;
-}
-
-.placeholder {
-    width: 40%;
-    margin: 5px auto;
-}
-
-/**********************************ABOUT**********************************************/
+/**************************PHOTOS**********************************/
 #danielle, #danielle2 {
+    border-radius: 50%;
     max-width: 100%;
     max-height: 100%;
-    min-width: 225px;
-    margin: auto;
+    margin-right: 10px;
 }
 
 #danielle {
     display: block;
 }
 
+.desaturate {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    opacity: .5;
+}
+
 .hide { /* USED  TO HIDE #danielle2 */
     display: none;
 }
 
-/*************************************PORTFOLIO**************************************/
-#port-img img {
-    max-width: 100%;
-    border: 2px solid #000;
-    text-align: center;
-}
-
-.portfolioUI {
-    width: 30%;
-    min-width: 260px;
-    text-align: center;
-    margin: 10px;
-}
-
-#portfolioLogo {
-    text-align: center;
-}
-
-
-/***********************************CONTACT*****************************************/
-.connect {
-    text-align: center;
-    font-size: 6.5em;
-    border: 1px solid #999;
-    border: inset 1px solid #333;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);;
-}
-
-.connect a, .connect a:active, .connect a:visited, .connect a:link, .connect a:hover {
-     color: #551a8b;
-}
-
-/********************************CONNECT HOVER*************************************/
-.grow {
-  display: inline-block;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.grow:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+#daniellePics {
+    float: left;
 }
 
 /*****************************CONTACT FORM***************************************/
 form {
-    text-align: center;
-    margin: 10px;
-    border: 1px solid #999;
-    border: inset 1px solid #333;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
 
 input#submit {
@@ -227,26 +156,19 @@ input#submit {
 
 input, select, textarea, button {
     font-family: inherit;
-    margin: auto;
+    display: block;
+    max-width: 100%
 }
 
 textarea {
-    width: 50%;
-}
-
-input {
-    margin: 5px auto;
-}
-
-label {
-    display: block;
+    width: 100%;
 }
 
 /******************************SEND BUTTON HOVER******************************/
 .box-shadow-inset {
   display: inline-block;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
   box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0);
@@ -298,70 +220,24 @@ footer p {
 
 /****************************MOBILE: MOBILE NAV HIDER*************************/
 
-.mobile-only {
-    display: none;
-}
-
-#mobile-nav {
+.slicknav_menu {
     display: none;
 }
 
 /****************************RESPONSIVE MEDIA QUERIES************************/
 
-@media only screen and (max-width: 800px) {
-    #right {
-        float: none;
-        margin: auto;
-        width: 100%;
-    }
-
-    .placeholder {
-        width: 60%;
-    }
-
-    form {
-        max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 776px) {
-    #left {
-        float:none;
-        margin: auto;
-        width: 100%
-    }
-
-    #left img, #right img {
-        width: 100%
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .connect {
-        font-size: 4em;
-    }
+@media only screen and (max-width: 600px) {
 
     nav.main-nav {
         display: none;
     }
 
-    .mobile-only {
+    .slicknav_menu {
         display: block;
-        position: absolute;
-        top: 3px;
-        right: 17px;
-        font-size: 2.5em;
-        color: #8133B4;
     }
 
-    .mobile-only a:hover {
-        border-bottom: none;
-    }
-
-    #mobile-nav, #mobile-nav ul li {
-        display: block;
-        line-height: 1.5em;
-        font-size: 2.5em;
+    form {
+        max-width: 90%;
     }
 
 }
