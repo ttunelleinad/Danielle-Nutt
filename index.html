@@ -57,10 +57,10 @@
                         <input type="text" id="lastName" data-required maxlength="100" size="30">
                         <br>
                         <label>Email: </label><br>
-                        <input type="email" id="email" data-required email maxlength="100" size="30">
+                        <input type="email" id="email" email data-required maxlength="100" size="30">
                         <br>
                         <label>How Can I Help You?</label><br>
-                        <textarea rows="6" id="message" required></textarea><br>
+                        <textarea rows="6" id="message" data-required></textarea><br>
                         <div class="submit"><input type="submit" value="Send" id="submit" class="box-shadow-inset"></div>
                 </form>
             </section>
@@ -79,6 +79,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/fm.validator.jquery.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.slicknav.js"></script>
