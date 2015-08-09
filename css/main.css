@@ -108,6 +108,11 @@ nav a {
 
 
 /**************************PHOTOS**********************************/
+#daniellePics {
+    float: left;
+    position: relative;
+}
+
 #danielle, #danielle2 {
     border-radius: 50%;
     max-width: 100%;
@@ -119,6 +124,19 @@ nav a {
     display: block;
 }
 
+#danielle2 {
+    position: absolute;
+    top: 85px;
+    left: 80px;
+}
+
+#danielle2, #danielle2 a {
+    text-align: center;
+    font-weight: bold;
+    font-size: bigger;
+    color: #8133B4;
+}
+
 .desaturate {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -128,10 +146,6 @@ nav a {
 
 .hide { /* USED  TO HIDE #danielle2 */
     display: none;
-}
-
-#daniellePics {
-    float: left;
 }
 
 /*****************************CONTACT FORM***************************************/
