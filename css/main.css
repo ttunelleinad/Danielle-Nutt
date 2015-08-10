@@ -61,6 +61,10 @@ h1 {
     font-size: 36px;
 }
 
+#page2 h1 {
+    text-align: left;
+}
+
 h1 a {
     text-decoration: none;
     color: #8133B4;
@@ -126,7 +130,7 @@ nav a {
 
 #danielle2 {
     position: absolute;
-    top: 85px;
+    top: 75px;
     left: 80px;
 }
 
@@ -135,13 +139,6 @@ nav a {
     font-weight: bold;
     font-size: bigger;
     color: #8133B4;
-}
-
-.desaturate {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: url(desaturate.svg#greyscale);
-    opacity: .5;
 }
 
 .hide { /* USED  TO HIDE #danielle2 */
@@ -207,7 +204,7 @@ footer {
 }
 
 footer p {
-    margin: 5px auto;
+    margin: 2px auto;
 }
 
 #social ul li {
@@ -218,11 +215,15 @@ footer p {
 #social a, #social a:active, #social a:link, #social a:visited {
     text-decoration: none;
     color: #8133B4;
-    font-size: 1.9em;
+    font-size: 1.2em;
 }
 
 #social a:hover {
     color: #cc31f9;
+}
+
+#instafeed {
+    margin-top: 10px;
 }
 
 /**********************************CLEAR FIX*********************************/
@@ -252,6 +253,14 @@ footer p {
 
     form {
         max-width: 90%;
+    }
+
+    #danielle {
+        opacity: .4;
+    }
+
+    #danielle2 {
+        display: block;
     }
 
 }

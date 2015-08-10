@@ -37,29 +37,21 @@ $(function(){
      });
  });
 
-/*//About Section Photo
-$('img#danielle').mouseenter(function() {
-    $(this).addClass("desaturate");
-    $("#danielle2").css("display", "block");
-});
-
-$('img#danielle').mouseleave(function() {
-    $(this).removeClass("desaturate");
-    $("#danielle2").css("display", "none");
-});*/
-
-$(document).ready(function () {
-    $('#danielle').hover(function () {
-        $(this).stop().animate({
-            opacity: .4
-        }, 200);
-        $('#danielle2').removeClass('hide');
-    }, function () {
-        $(this).stop().animate({
-            opacity: 1
-        }, 500);
-        $('#danielle2').addClass('hide');
-    });
+//Contact Info Hover
+$(function() {
+	if($(window).width() > 600){
+	    $('#danielle').hover(function () {
+	        $(this).stop().animate({
+	            opacity: .4
+	        }, 200);
+	        $('#danielle2').removeClass('hide');
+	    }, function () {
+	        $(this).stop().animate({
+	            opacity: 1
+	        }, 500);
+	        $('#danielle2').addClass('hide');
+	    });
+    }
 });
 
 //SlickNav
