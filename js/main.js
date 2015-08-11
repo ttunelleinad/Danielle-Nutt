@@ -42,7 +42,7 @@ $(function() {
 	if($(window).width() > 600){
 	    $('#danielle').hover(function () {
 	        $(this).stop().animate({
-	            opacity: .4
+	            opacity: .25
 	        }, 200);
 	        $('#danielle2').removeClass('hide');
 	    }, function () {

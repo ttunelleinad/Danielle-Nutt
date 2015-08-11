@@ -48,6 +48,7 @@ header {
     height: 200px;
     background: url(../img/swirl.png);
     text-align: center;
+    border-bottom: 1px solid #000;
 }
 
 #logo img {
@@ -110,7 +111,6 @@ nav a {
     border-bottom: 3px solid #8133B4;
 }
 
-
 /**************************PHOTOS**********************************/
 #daniellePics {
     float: left;
@@ -131,7 +131,7 @@ nav a {
 #danielle2 {
     position: absolute;
     top: 75px;
-    left: 80px;
+    left: 75px;
 }
 
 #danielle2, #danielle2 a {
@@ -149,7 +149,7 @@ nav a {
 form {
     border: 1px solid #000;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -173,6 +173,10 @@ input, select, textarea, button {
 
 textarea {
     width: 100%;
+}
+
+.validator-error {
+    color: #8133B4;
 }
 
 /******************************SEND BUTTON HOVER******************************/
@@ -222,10 +226,6 @@ footer p {
     color: #cc31f9;
 }
 
-#instafeed {
-    margin-top: 10px;
-}
-
 /**********************************CLEAR FIX*********************************/
 .group:after {
   content: "";
@@ -233,14 +233,7 @@ footer p {
   clear: both;
 }
 
-/****************************MOBILE: MOBILE NAV HIDER*************************/
-
-.slicknav_menu {
-    display: none;
-}
-
 /****************************RESPONSIVE MEDIA QUERIES************************/
-
 @media only screen and (max-width: 600px) {
 
     nav.main-nav {
@@ -256,7 +249,7 @@ footer p {
     }
 
     #danielle {
-        opacity: .4;
+        opacity: .25;
     }
 
     #danielle2 {

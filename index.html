@@ -6,13 +6,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Danielle Nutt: About</title>
+        <title>Danielle Nutt</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/SlickNav/slicknav.css" /><!--slicknav-->
+        <!--slicknav-->
+        <link rel="stylesheet" href="css/SlickNav/slicknav.css">
         <!--font awesome-->
         <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
     </head>
@@ -25,9 +26,9 @@
         </header>
         <nav class="main-nav" id="menu">
              <ul>
-                <li class="not-mobile"><a href="#page1" class="page1">About</a></li>
-                <li class="not-mobile"><a href="#page2" class="page2">Portfolio</a></li>
-                <li class="not-mobile"><a href="#page3" class="page3">Contact</a></li>
+                <li><a href="#page1" class="page1">About</a></li>
+                <li><a href="#page2" class="page2">Portfolio</a></li>
+                <li><a href="#page3" class="page3">Contact</a></li>
             </ul>
         </nav> 
         <div id="container" class="group">
@@ -71,7 +72,7 @@
                         <input type="text" id="lastName" data-required maxlength="100" size="30">
                         <br>
                         <label>Email: </label><br>
-                        <input type="email" id="email" email data-required maxlength="100" size="30">
+                        <input type="text" data-type="email" id="email" email data-required maxlength="100" size="30">
                         <br>
                         <label>How Can I Help You?</label><br>
                         <textarea rows="6" id="message" data-required></textarea><br>

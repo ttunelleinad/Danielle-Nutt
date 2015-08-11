@@ -3,7 +3,7 @@
     // default settings object.
         defaults = {
             label: '<i class="fa fa-bars"></i>',
-            duplicate: true,
+            duplicate: false,
             duration: 200,
             easingOpen: 'swing',
             easingClose: 'swing',
