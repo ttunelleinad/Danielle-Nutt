@@ -27,29 +27,27 @@ $(function() {
 });
 
 //Show Homepage As Active Nav Item On Load
-$('nav a.page1').addClass('current');
+$(function(){
+	$('nav a.page1').addClass('current');
+});
 
 //Show Active Navigation Item
 $(function(){
-    $('nav a').click(function () {
-        $('nav a').removeClass('current');
-        $(this).addClass('current');
+    $("nav a").click(function () {
+        $("nav a").removeClass("current");
+        $(this).addClass("current");
      });
  });
 
 //Contact Info Hover
 $(function() {
 	if($(window).width() > 600){
-	    $('#danielle').hover(function () {
-	        $(this).stop().animate({
-	            opacity: .25
-	        }, 200);
-	        $('#danielle2').removeClass('hide');
+	    $("#daniellePics").hover(function () {
+	        $("#danielle").stop().css("opacity", ".25");
+	        $("#danielle2").removeClass("hide");
 	    }, function () {
-	        $(this).stop().animate({
-	            opacity: 1
-	        }, 500);
-	        $('#danielle2').addClass('hide');
+	        $("#danielle").stop().css("opacity", "1");
+	        $("#danielle2").addClass("hide");
 	    });
     }
 });
