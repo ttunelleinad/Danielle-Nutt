@@ -82,14 +82,3 @@ $(function() {
         }
     });
 });
-
-//Instagram Feed
-$(function() {
-    $(".instagram-lite").instagramLite({
-        list: "false",
-        urls: "true",
-        limit: "12",
-        clientID: "e2f4c537768347a880c913f4655c2d6a",
-        username: "ttunelleinad"
-    });
-});
