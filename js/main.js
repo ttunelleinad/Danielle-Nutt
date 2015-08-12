@@ -64,6 +64,7 @@ $(function() {
         if(!$(".validator-error").length) {
             var user = [$("#firstName").val(), $("#lastName").val(), $("#email").val(), $("#message").val()];
             console.log(JSON.stringify(user));
+
             $.ajax(
                 {
                     type: "POST",
@@ -79,5 +80,16 @@ $(function() {
                 }
             );
         }
+    });
+});
+
+//Instagram Feed
+$(function() {
+    $(".instagram-lite").instagramLite({
+        list: "false",
+        urls: "true",
+        limit: "12",
+        clientID: "e2f4c537768347a880c913f4655c2d6a",
+        username: "ttunelleinad"
     });
 });

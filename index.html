@@ -37,7 +37,8 @@
                 <div id="daniellePics">
                     <img src="img/danielle.jpg" alt="Danielle" id="danielle">
                     <div id="danielle2" class="hide">
-                        <h1>Contact Info</h1>
+                        <h1><span class="hide">Contact Info</span></h1>
+                        <br>
                         <p>106 Pine Valley Road Delran, NJ 08075</p>
                         <p>609-634-5460</p>
                         <p><a href="#">nutt.danielle@gmail.com</a></p>
@@ -81,7 +82,9 @@
             </section>
         </div><!--close container-->        
         <footer>
-            <div id="instafeed"></div> 
+            <div id="instagram">
+                <ul class="instagram-lite"></ul>
+            </div>
             <div id="social">
                 <ul>
                     <li><a href="https://www.linkedin.com/pub/danielle-nutt/9b/399/a84" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
@@ -99,17 +102,8 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.slicknav.js"></script>
-        <script type="text/javascript" src="js/instafeed.js"></script>
-                    <!--INSTAGRAM FEED
-                    <script type="text/javascript">
-                            var feed = new Instafeed({
-                                accessToken: 
-                                get: 'user',
-                                userId: 'ttunelleinad',
-                                clientId: 'e2f4c537768347a880c913f4655c2d6a'
-                            });
-                            feed.run();
-                        </script>-->
+        <script src="/js/instagramLite.js"></script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
