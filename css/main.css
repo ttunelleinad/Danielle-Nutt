@@ -45,8 +45,8 @@ body {
 }
 
 header {
-    height: 200px;
-    background: url(../img/body-background1.jpg);
+    min-height: 200px;
+    background: url(../img/swirl.png);
     text-align: center;
     border-bottom: 1px solid #000;
 }
@@ -97,13 +97,17 @@ nav a {
 }
 
 /***************************************SLICKNAV***************************************/
-.slicknav_menu {
-    margin-left: 5px;
-    background: url(../img/slicknav-background.jpg);
+.slicknav_menu  {
+    text-align: right;
 }
 
 .slicknav_menu i {
     color: #8133B4;
+}
+
+.slicknav_menutxt {
+    font-size: 2em;
+    margin-right: 20px;
 }
 
 /*********************************SHOW CURRENT NAV POSITION****************************/
